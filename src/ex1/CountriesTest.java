@@ -14,15 +14,16 @@ public class CountriesTest {
         try (BufferedReader br = new BufferedReader(new FileReader(new File("countries.csv")))) {
             Map<String, Country> countryMap = getCountry(br);
             System.out.println("Kody krajów dostępne w bazie: " + countryMap.keySet());
+            printCountry(countryMap);
         } catch (IOException | InputMismatchException | ArrayIndexOutOfBoundsException ex) {
             System.err.println(ex);
         }
     }
-
+    
     private static void printCountry(Map<String, Country> customerMap) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj kod kraju,o którym chcesz wyświetlić informacje");
-        int indeks = scanner.nextInt();
+        String indeks = scanner.nextLine();
         if (customerMap.containsKey(indeks)) {
             System.out.println(customerMap.get(indeks));
         } else {
