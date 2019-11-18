@@ -19,7 +19,7 @@ public class CountriesTest {
             System.err.println(ex);
         }
     }
-    
+
     private static void printCountry(Map<String, Country> customerMap) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj kod kraju,o którym chcesz wyświetlić informacje");
