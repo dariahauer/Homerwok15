@@ -46,10 +46,10 @@ public class VihicleContol {
             String model = scan.nextLine();
             System.out.println("Enter production year: ");
             int year = scan.nextInt();
-            scan.nextLine();
+            scan.nextInt();
             System.out.println("Enter distance: ");
             int distance = scan.nextInt();
-            scan.nextLine();
+            scan.nextInt();
             System.out.println("Enter VIN: ");
             String vin = scan.nextLine();
             vehicleQueue.offer(new Vehicle(type, producer, model, year, distance, vin));

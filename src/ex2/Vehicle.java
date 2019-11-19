@@ -6,7 +6,7 @@ public class Vehicle {
     private String model;
     private int year;
     private int distance;
-    private String VIN;
+    private String vin;
 
     public Vehicle(String type, String producer, String model, int year, int distance, String VIN) {
         this.type = type;
@@ -14,7 +14,7 @@ public class Vehicle {
         this.model = model;
         this.year = year;
         this.distance = distance;
-        this.VIN = VIN;
+        this.vin = vin;
     }
 
     public String getType() {
@@ -58,11 +58,11 @@ public class Vehicle {
     }
 
     public String getVIN() {
-        return VIN;
+        return vin;
     }
 
     public void setVIN(String VIN) {
-        this.VIN = VIN;
+        this.vin = vin;
     }
 
     @Override
@@ -73,7 +73,7 @@ public class Vehicle {
                 ", model='" + model + '\'' +
                 ", year=" + year +
                 ", distance=" + distance +
-                ", VIN='" + VIN + '\'' +
+                ", VIN='" + vin + '\'' +
                 '}';
     }
 }
